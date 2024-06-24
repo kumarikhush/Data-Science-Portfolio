@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+     body {
+            position: relative;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #333;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .about-section, .projects-section, .skills-section, .contact-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .about-section h2, .projects-section h2, .skills-section h2, .contact-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .about-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            max-width: 600px;
+            margin: 10px auto;
+            font-size: 1rem;
+        }
+        .projects-section .card, .skills-section .card {
+            margin-bottom: 30px;
+        }
+        .projects-section .card img, .skills-section .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .skills-section .card img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin: 0 auto 20px;
+        }
+        .contact-section {
+            background-color: #333;
+            color: white;
+        }
+        .contact-section .contact-info {
+            margin-bottom: 30px;
+        }
+        .contact-section .contact-info i {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        .contact-section .social-icons a {
+            margin: 0 10px;
+        }
+        .contact-section .social-icons a img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: pink;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example" data-offset="70">
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<section id="home">
+    <div class="container">
+        <h1>Welcome to my Portfolio</h1>
+    </div>
+</section>
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>About</h2>
+        <img src="C:\Users\khush\OneDrive\Documents\Data Science Protfolio\Images\about\B612_20201031_173646_465.jpg" alt="Profile Image">
+        <p>I’m a passionate data scientist with a strong background in machine learning, statistical analysis, and data visualization. </p>
+        <p>My journey began with a fascination for extracting meaningful insights from complex datasets, and I’ve since honed my skills through hands-on projects and continuous learning.</p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="C:\Users\khush\OneDrive\Documents\Data Science Protfolio\Images\Projects\Forecast" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Forecasting the incident volume</h5>
+                        <p class="card-text">In my recent project, I leveraged data analytics to enhance incident management. The core of the project was to predict future incident trends using historical data. This approach not only provided insights into incident patterns but also equipped us with a predictive tool for better resource allocation and management.</p>
+                        <a href="https://github.com/kumarikhush/Forecasting-The-Incident-Volune" target="_blank" data-toggle="tooltip">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="C:\Users\khush\OneDrive\Documents\Data Science Protfolio\Images\Projects\Picture1.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Megastore-Predictive</h5>
+                        <p class="card-text">MegaStore leverages data analytics to enhance business decisions.Understand product and outlet characteristics influencing sales.Develop predictive models using machine learning techniques.Assess model performance (accuracy, precision, recall, etc.) to optimize decision-making.</p>
+                        <a href="https://github.com/kumarikhush/Data-Science-Megastore-Predictive" target="_blank" data-toggle="tooltip">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="C:\Users\khush\OneDrive\Documents\Data Science Protfolio\Images\Projects\Healthcare_Data_Analyst_Projects.png" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Healthcare Course-end Project</h5>
+                        <p class="card-text">The objective is to predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset.Build a model to accurately predict whether the patients in the dataset have diabetes or not.</p>
+                        <a href="https://github.com/kumarikhush/Healthcare-Project" target="_blank" data-toggle="tooltip">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="C:\Users\khush\OneDrive\Documents\Data Science Protfolio\Images\Skills\1.png" class="card-img-top" alt="Skill 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science with Python</h5>
+                        <p class="card-text"></p>
+                        <a href="file:///C:/Users/khush/OneDrive/Documents/Certificate/Data%20science%20with%20python.pdf" target="_blank" data-toggle="tooltip">Link to certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="C:\Users\khush\OneDrive\Documents\Data Science Protfolio\Images\Skills\Simplilearn.png" class="card-img-top" alt="Skill 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Simplilearn Data Science Master Program</h5>
+                        <p class="card-text"></p>
+                        <a href="file:///C:/Users/khush/OneDrive/Documents/Certificate/Simplilearn_Data%20Science%20Master%20program.pdf" target="_blank" data-toggle="tooltip">Link to certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="C:\Users\khush\OneDrive\Documents\Data Science Protfolio\Images\Skills\ML.png" class="card-img-top" alt="Skill 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning</h5>
+                        <p class="card-text"></p>
+                        <a href="file:///C:/Users/khush/OneDrive/Documents/Certificate/Simplilearn_Machine%20Learning.pdf" target="_blank" data-toggle="tooltip">Link to certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="C:\Users\khush\OneDrive\Documents\Data Science Protfolio\Images\Skills\Tableau.png" class="card-img-top" alt="Skill 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Tableau Training</h5>
+                        <p class="card-text"></p>
+                        <a href="file:///C:/Users/khush/OneDrive/Documents/Certificate/Tableau.pdf" target="_blank" data-toggle="tooltip">Link to certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <div class="row contact-info">
+            <div class="col-md-6">
+                <i class="fas fa-envelope"></i>
+                <span>khushimishra516@gmail.com</span>
+            </div>
+            <div class="col-md-6">
+                <i class="fas fa-phone"></i>
+                <span>+918579958302, +918240552017</span>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="social-icons">
+                <a href= "https://www.linkedin.com/in/khushboo-kumari-0a2019136/" target="_blank" data-toggle="tooltip" title="LinkedIn">
+                    <img src="C:\Users\khush\OneDrive\Documents\Data Science Protfolio\Icons\linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/kumarikhush" target="_blank" data-toggle="tooltip" title="GitHub">
+                    <img src="C:\Users\khush\OneDrive\Documents\Data Science Protfolio\Icons\github.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+</body>
+</html>
